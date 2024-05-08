@@ -1,6 +1,5 @@
 package com.ellenmateus.workshopmongo.resources;
 
-import java.net.URL;
 import java.util.Date;
 import java.util.List;
 
@@ -13,13 +12,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ellenmateus.workshopmongo.domain.Post;
+import com.ellenmateus.workshopmongo.resources.util.URL;
 import com.ellenmateus.workshopmongo.services.PostService;
 
 @RestController
 @RequestMapping(value="/posts")
 public class PostResource {
 
-	
 	@Autowired
 	private PostService service;
 
